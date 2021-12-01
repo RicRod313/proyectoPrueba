@@ -75,11 +75,11 @@ const StyledBadgeRed = styled(Badge)(({ theme }) => ({
 
 const TemporaryDrawer = (props) => {
 
-  const token = props.user.token !== "" ? true : false
+  const token = props.user.token ? true : false
   const dispatch = useDispatch();
 
   console.log(token)
-  console.log(props.user.token)
+  console.log(props.user)
 
   const styleAccess = () => {
     return(

@@ -39,7 +39,7 @@ function App() {
         <div className="container mt-5">
           <Routes>
             { /* HomePage */ }
-            <Route path="/" element={<PrivateRoute auth={user.token !== "" ? true : false} component={ HomePage } />} />
+            <Route path="/" element={<PrivateRoute auth={user.token ? true : false} component={ HomePage } />} />
             { /* LoginPage */ }
             <Route path="/login" element={<LoginPage />} />
             { /* SignupPage */ }
