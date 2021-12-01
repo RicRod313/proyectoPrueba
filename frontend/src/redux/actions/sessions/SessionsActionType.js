@@ -1,0 +1,3 @@
+export const LOGIN_ACCESS = '[LOGIN] ACCESS USER';
+export const SIGNUP_ACCESS = '[SIGNUP] SIGN UP USER';
+export const SIGNOUT_ACCESS = '[SIGNOUT] SIGN OUT USER';
